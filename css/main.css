@@ -1,0 +1,77 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald');
+
+body {
+    margin: auto;
+    width: 50%;
+    background-color: snow;
+}
+
+h1 {
+    font-family: 'Montserrat';
+}
+
+section,
+footer {
+    font-family: 'Oswald', sans-serif;
+}
+
+footer {
+    display: grid;
+    justify-items: center;
+    background-color: rgb(8, 122, 167);
+    color: snow;
+    border-radius: 6px;
+    padding: 10px;
+    width: 100%;
+}
+
+.body-box {
+    display: grid;
+    grid-template-rows: 2fr 3fr 1fr;
+
+}
+
+.header-box {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 14px;
+    margin-top: 1em;
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(8, 122, 167);
+    color: snow;
+    border-radius: 6px;
+    padding: 16px;
+    width: 100%;
+}
+
+.main-box {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+#footer-top {
+    font-family: 'Montserrat';
+}
+
+#lastupdated {
+    font-style: italic;
+    font-size: smaller;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .body-box {
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .header-box {
+        grid-template-columns: auto;
+    }
+}
