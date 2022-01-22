@@ -1,0 +1,15 @@
+:root {
+ 
+  
+    --heading-font: "Saira Semi Condensed";
+    --paragraph-font: "Overpass";
+  }
+
+@media (min-width: 37.5em) {
+  
+  nav ul {
+    display: flex;
+  }
+  
+  
+}
