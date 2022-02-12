@@ -26,15 +26,18 @@
       <section id="logo-nav">
         <div id="logo">
           <img
-            src="../week 3/images/The colony.jpg"
+            src="images/The colony.webp"
             alt="The colony City Chamber of Commerce Logo"  width="100%"
           />
         </div>
         <h1>The Colony Chamber of Commerce</h1>
         <div id=social-media>
-          <a href="https://www.facebook.com" target="_blank" class="facebook"><img src="images/facebook.png" alt="facebook logo" width=80em></a>
-          <a href="https://www.facebook.com" target="_blank" class="linkedin"><img src="images/linked.png" alt="linkedin logo" width=80em></a>
+          <a href="https://www.facebook.com" target="_blank" class="facebook"><img src="images/face.webp" alt="facebook logo" width=80em></a>
+          <a href="https://www.facebook.com" target="_blank" class="linkedin"><img src="images/linked.webp" alt="linkedin logo" width=80em></a>
+          <span id="headerDate"></span>
+          <span id="banner"></span>
         </div>
+
           <nav>
             <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
             <ul id="primaryNav">
@@ -60,29 +63,80 @@
     </header>
       <main>
         <section class="hero">
-          <p>Hero with site name and call to action</p>
+          <picture>
+            <source srcset="images/wdd230-org.webp" media="(min-width: 512px) and (max-width: 1023px)">
+            <source srcset="images/wdd230-org.webp" media="(min-width: 1024px)">
+            <img id="hero-image" src="images/wdd230-org.webp" alt="Mountain on a sunny day with fluffy clouds in the blue sky">
+          </picture>
+          <div class="joinUs-btn">
+            <h2>Welcome to The Colony</h2>
+            <button>Join the Chamber</button>
+          </div>
         </section>
         <section class="event">
-          <p>Event</p>
+          <h2>Grand Opening</h2>
+          <img src="images/barber.webp" alt="barber shop logo">
+          <p>The Colony barbershop</p>
+          <hr>
+          <p>Up to 50% off!</p>
+          <a href="#">more info ...</a>
         </section>
         <section class="weather">
-          <p>Weather</p>
+            <img src="./images/download.webp" alt="image for weather">
+            
+                <h2>Weather</h2>
+                    <p><strong>High:</strong> <span id="higher">75</span>&deg;</p> 
+                    <p><strong>Low:</strong> 60&deg;</p>
+                    <p><strong>Chance of Precipitation:</strong> 2%</p>
+                    <p><strong>Wind:</strong><span id="wind">4</span>mph NW</p>
+                    <p><strong>Wind Chill: </strong><span id="wind_chill"></span>&deg;</p>  
+            
         </section>
         <section class="news-release">
-          <p>News Release</p>
+          <section>
+            <h3>New firefighters learn 'The Colony Way'</h3>
+            <div>
+              <p>Welcome aboard! The Colony Fire Department recently hired seven new candidate firefighters.
+                 From Dec. 8-11, the new recruits completed a 40-hour in-service fire academy comprised of four
+                 10-hour days. During this time they expanded on their training by working closely with veteran
+                 TCFD firefighters to learn "The Colony Way" on engine operation, truck operation, and general
+                 overall operations within the department.</p>
+            </div>
+          </section>
         </section>
-        <section class="join">Join</section>
+        <section class="join">
+        <div class="join">
+          <button>Join Us!</button>
+          <p>Discover how to join The colony Chamber and how it can benefit your organization!</p>
+        </div>
+        Join</section>
         <section class="spotlight">
-          <div>
-            <p class="spotlight1">Spotlight 1</p>
+          <div class="spotlight">
+            <section class="spotlight1">
+              <h4>The Colony youth sports</h4>
+              <img src="images/sports.webp" alt="youth sports logo">
+              <p>welcom to that time of year again its time to start signing up for your sports </p>
+              <hr>
+              <a href="#">Youthsports@thecolony.org</a>
+              <p>(999)999-9999 | <a href="#">Website</a></p>
+            </section>
+            <section class="spotlight2">
+              <h4>Jimmys boat rental</h4>
+              <img src="images/boat.webp" alt="boat rental logo ">
+              <p>NEW BUISNESS jimmys boat rental has oppend a franchise on this side of the lake come visit</p>
+              <hr>
+              <a href="#">info@jimmysboatrental.com</a>
+              <p>(999)999-9999 | <a href="#">Website</a></p>
+            </section>
+            <section class="spotlight3">
+              <h4>Office Haven</h4>
+              <img src="images/farm.webp" alt="farm to market logo">
+              <p>Come visit the farmers market </p>
+              <hr>
+              <a href="#">info@farmersmarket.com</a>
+              <p>(999)999-9999 | <a href="#">Website</a></p>
+            </section>
           </div>
-          <div>
-            <p class="spotlight2">Spotlight 2</p>
-          </div>
-          <div>
-            <p class="spotlight3">Spotlight 3</p>
-          </div>
-        </section>
       </main>
       <footer>
         <div class="footer-upper">
@@ -106,7 +160,7 @@
             &copy; <span id="currentyear"></span> The Colony 
           </div>
           <p class="my-name">Andrew Finlayson </p>
-          <p class="wdd-project">WDD 230 Project</p>
+          <p class="wdd-project"></p>
         </div>
         <div class="lastupdated-footer">
           <p>Last Updated: <span id="updated"></span></p>
