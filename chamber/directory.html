@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The Chamber of Commerce Project by Andrew Finlayson in WDD 230"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@200&family=Saira+Semi+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    
+    <title>The colony Chamber of Commerce</title>
+  </head>
+  <body>
+    <header>
+      <section id="logo-nav">
+        <div id="logo">
+          <img
+            src="images/The colony.webp"
+            alt="The colony City Chamber of Commerce Logo"  width="100%"
+          />
+        </div>
+        <h1>The Colony Chamber of Commerce</h1>
+        <div id=social-media>
+          <a href="https://www.facebook.com" target="_blank" class="facebook"><img src="images/face.png" alt="facebook logo" width=80em></a>
+          <a href="https://www.facebook.com" target="_blank" class="linkedin"><img src="images/linked.png" alt="linkedin logo" width=80em></a>
+          <span id="headerDate"></span>
+          <span id="banner"></span>
+        </div>
+
+          <nav id="nav">
+            <button id="hamburgerBtn"><span>&#9776;</span><span>&#9932;</span></button>
+            <ul id="primaryNav">
+              <li class="active"><a href="../chamber/index.html">Home</a></li>
+              <li class="active">
+                <a href="../chamber/discover.html">Discover</a>
+              </li>
+              <li class="active">
+                <a href="../chamber/directory.html">Directory</a>
+              </li>
+              <li class="active">
+                <a href="../chamber/join.html">Join</a>
+              </li>
+              <li class="active">
+                <a href="#">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+      </section>
+        <div id="today-date">
+          <p><span id="currentdate"></span></p>
+        </div>
+    </header>
+      <main>
+        <section id="directory">
+          <div id="directory-title">
+              <h1>Member Directory</h1>
+          </div>
+          <div id="view">
+              <button id="list-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16">
+                  <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+                </svg>
+              </button>
+              <button id="grid-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-list" viewBox="0 0 16 16">
+                  <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                  <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                </svg>
+              </button>
+          </div>
+              <div class="member-cards"></div>
+              <div class="member-list"></div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-upper">
+          <section class="name-address">
+            <img src="../week 3/images/The colony.jpg" alt="Pinnaccle Logo">
+            <p class="site-name">The colony City Chamber of Commerce</p>
+            <div class="address">
+              <p>5077 shannon dr</p>
+              <p>The Colony, TX 75756</p>
+            </div>
+          </section>
+          <section class="contact-info">
+            <p class="email">info@thecolony.org</p>
+            <p class="phone">(800) 867 - 5309 </p>
+            <p class="location"> Location Map</p>
+          </section>
+        </div>
+        <hr>
+        <div class="footer-lower">
+          <div class="copywrite-footer">
+            &copy; <span id="currentyear"></span> The Colony 
+          </div>
+          <p class="my-name">Andrew Finlayson </p>
+          <p class="wdd-project"></p>
+        </div>
+        <div class="lastupdated-footer">
+          <p>Last Updated: <span id="updated"></span></p>
+        </div>
+      </footer>
+    <script src="../chamber/js/script.js"></script>
+    <script src="../chamber/js/directory.js"></script>
+  </body>
+</html>
