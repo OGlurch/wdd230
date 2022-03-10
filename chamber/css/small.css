@@ -14,594 +14,601 @@
     --paragraph-font: "Overpass", Sans-Serif, Helvetica;
   }
   
-  html {
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-  }
-  
-  /*----------- apply a natural box layout model to all elements --------------*/
-  * {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  
-  h1,
-  p {
-    margin: 0 2vw;
-  }
-  
-  body {
-    min-width: 300px;
-    margin: auto;
-  }
-  
-  #banner {
-    font-family: var(--heading-font);
-    font-size: 14pt;
-    color: white;
-    background-color: var(--accent3-color);
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  header,
-  footer {
-    background-color: var(--primary-color);
-    border-radius: 15px;
-    margin: 20px;
-    padding: 1rem;
-  }
-  
-  #logo-nav {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-  }
-  
-  #logo img {
-    height: 75px;
-    width: 75px;
-    border-radius: 15px;
-    border: 5px solid #bf4b3d;
-    box-shadow: 4px 4px 6px black;
-    margin: 5px;
-  }
-  
-  header h1 {
-    font-family: var(--heading-font);
-    font-size: 16pt;
-    text-align: center;
-    color: var(--secondary-color);
-    text-shadow: 4px 4px 6px black;
-  }
-  
-  .facebook img {
-    background-color: white;
-    border-radius: 50%;
-    border: 3px solid white;
-  }
-  
-  .linkedin img {
-    background-color: white;
-    border-radius: 10px;
-    border: 3px solid white;
-  }
-  
-  #today-date {
-    font-family: var(--heading-font);
-    color: var(--secondary-color);
-    text-align: center;
-    padding: 0.5em;
-  }
-  
-  nav button {
-    margin: 0.2rem 2vw;
-    background: transparent;
-    border: none;
-    font-size: 2rem;
-  }
-  
-  nav {
-    align-items: center;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    position: sticky;
-  }
-  
-  nav ul li {
-    display: inline;
-  }
-  
-  nav ul li a {
-    display: block;
-    padding: 0.8rem;
-    text-decoration: none;
-    font-family: var(--paragraph-font);
-    color: var(--secondary-color);
-  }
-  nav ul li .active {
-    background-color: rgba(0, 0, 0, 0.2);
-    color: #fff;
-  }
-  
-  nav ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  
-  nav ul {
-    display: none;
-  }
-  
-  nav ul.open {
-    display: block;
-  }
-  
-  #hamburgerBtn span:nth-child(1) {
-    display: block;
-  }
-  #hamburgerBtn span:nth-child(2) {
-    display: none;
-  }
-  
-  #hamburgerBtn.open span:nth-child(1) {
-    display: none;
-  }
-  #hamburgerBtn.open span:nth-child(2) {
-    display: block;
-  }
-  
-  .home {
-    display: grid;
-    grid-template-rows: repeat(5, auto);
-    grid-row-gap: 10px;
-    padding: 1em;
-    margin: 15px;
-  }
-  
-  .event,
-  .weather,
-  .news-release,
-  .join,
-  .spotlight {
-    font-family: var(--paragraph-font);
-    padding: 0.5em;
-    color: white;
-    box-shadow: 4px 4px 6px var(--accent1-color);
-  }
-  
-  .hero {
-    position: relative;
-  }
-  
-  #hero-image {
-    max-width: 100%;
-    opacity: 0.6;
-  }
-  
-  .joinUs-btn h2 {
-    position: absolute;
-    font-family: var(--heading-font);
-    font-style: initial;
-    color: var(--accent1-color);
-    margin-top: -30%;
-    margin-left: 10px;
-    font-size: 1.7em;
-    text-shadow: 0 0 4px white;
-  }
-  
-  .joinUs-btn button {
-    position: absolute;
-    margin-top: -18%;
-    margin-left: 20%;
-    background-color: #bf4b3d;
-    border: none;
-    border-radius: 15px;
-    color: white;
-    padding: 1em;
-    text-align: center;
-    text-decoration: none;
-    white-space: nowrap;
-    font-family: var(--paragraph-font);
-    font-size: 15px;
-    cursor: pointer;
-    box-shadow: 3px 3px 6px var(--accent1-color);
-  }
-  
-  .event {
-    text-align: center;
-    background-color: #353535;
-  }
-  
-  .event h2 {
-    font-size: 16pt;
-  }
-  
-  .event img {
-    margin-top: -15px;
-    max-width: 40%;
-  }
-  
-  .event a {
-    color: yellow;
-  }
-  
-  .event a:hover {
-    color: white;
-  }
-  
-  .news-release {
-    background-color: #353535;
-    font-style: initial;
-    text-align: center;
-  }
-  
-  .news-release h3 {
-    font-weight: bold;
-    font-size: 2em;
-    text-shadow: 0 0 8px white;
-    margin-bottom: 10px;
-  }
-  
-  .news-release p {
-    font-size: 22px;
-  }
-  
-  .join {
-    display: none;
-  }
-  .weather {
-    background-color: #353535;
-    margin: 20px;
-    text-align: center;
-  }
-  
-  .weather img {
-    max-width: 50%;
-  }
-  
-  .spotlight {
-    background-color: #353535;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .spotlight a {
-    color: yellow;
-  }
-  .spotlight a:hover {
-    color: white;
-  }
-  
-  .spotlight1 {
-    background-color: var(--primary-color);
-  }
-  
-  .spotlight1 img {
-    margin-top: -15px;
-    padding: 0.5em;
-    max-width: 60%;
-  }
-  
-  .spotlight2 {
-    background-color: var(--primary-color);
-    margin-top: 5px;
-  }
-  
-  .spotlight2 img {
-    margin-top: -15px;
-    padding: 0.5em;
-    max-width: 60%;
-  }
-  
-  .spotlight3 img {
-    margin-top: -15px;
-    max-width: 60%;
-  }
-  
-  .spotlight3 {
-    display: none;
-  }
-  
-  /* ----------------Footer------------- */
-  footer {
-    text-align: center;
-    padding: 1em;
-    color: var(--secondary-color);
-  }
-  
-  footer img {
-    height: 100px;
-    width: 100px;
-    border-radius: 10px;
-    padding: 5px;
-  }
-  
-  .contact-info {
-    text-align: center;
-  }
-  
-  .site-name {
-    font-weight: bold;
-    font-style: italic;
-    padding-bottom: 3px;
-  }
-  
-  .address1,
-  .address2 {
-    font-size: 10pt;
-    font-style: italic;
-  }
-  
-  .email,
-  .phone,
-  .location {
-    font-size: 10pt;
-    margin-top: 8px;
-  }
-  
-  .footer-lower {
-    margin-top: 10px;
-    padding-top: 5px;
-    font-size: 10pt;
-    text-align: center;
-  }
-  
-  .my-name {
-    font-size: 12pt;
-  }
-  
-  .wdd-project {
-    font-size: 10pt;
-  }
-  
-  #lastModified {
-    font-size: 10pt;
-    font-style: italic;
-    margin-top: 5px;
-  }
-  
-  /* -----------------Discover Page CSS------------------- */
-  #discover {
-    background-color: var(--accent2-color);
-    margin: 30px;
-    text-shadow: 4px 4px 6px black;
-    padding: 1em;
-  }
-  
-  #photos {
-    margin: auto;
-    text-align: center;
-  }
-  
-  #title {
-    font-family: var(--heading-font);
-    text-align: center;
-    padding: 0.5em;
-    background-color: #3c6e71;
-    border-radius: 10px;
-    color: #fff;
-    margin-top: 20px;
-  }
-  
-  .photo {
-    padding: 1em;
-    background-color: #353535;
-  }
-  
-  .photo img {
-    max-width: 100%;
-    border-radius: 15px;
-    border: 20px solid #bf4b3d;
-  }
-  
-  .photo {
-    padding: 20px;
-    margin: 10px;
-    border-radius: 20px;
-  }
-  
-  .photo p {
-    font-family: var(--paragraph-font);
-    font-size: 20px;
-    color: white;
-    background-color: #3c6e71;
-    border-radius: 10px;
-    margin: 1em;
-    padding: 1em;
-    box-shadow: 4px 4px 6px grey;
-  }
-  
-  
-  /* ---------------Join------------------ */
-  main {
-    padding: 0 3%;
-    min-height: 20rem;
-    font-family: var(--heading-font);
-  }
-  
-  form fieldset {
-    border: 3px solid var(--primary-color);
-    border-radius: 10px;
-    padding: 0.5rem 2%;
-  }
-  
-  form legend {
-    color: white;
-    margin: 0 0.5rem;
-    padding: 0.5rem;
-    background-color: var(--accent1-color);
-    border-radius: 6px;
-    box-shadow: grey 4px 4px 6px;
-  }
-  
-  form label.top,
-  form div {
-    display: block;
-    padding-top: 1rem;
-    color: var(--accent3-color);
-    font-size: 0.9rem;
-    font-weight: bold;
-  }
-  
-  form label.top input,
-  form label.top select,
-  form label.top textarea {
-    -webkit-appearance: none;
-    display: block;
-    font-size: 1rem;
-    border: solid 1px #999;
-    border-radius: 4px;
-    padding: 0.75rem;
-    color: #555;
-    width: 100%;
-    max-width: 20rem;
-    background-color: rgba(60, 110, 113, 0.15);
-  }
-  
-  form label span {
-    padding: 0 0.5rem;
-    background-color: #bf4b3d;
-    color: white;
-    border-radius: 8px;
-  }
-  
-  .member-box {
-    display: block;
-  }
-  
-  form label.sbs {
-    display: block;
-    padding: 0.75rem 0;
-  }
-  
-  form input.submitBtn {
-    border: none;
-    background-color: var(--accent3-color);
-    color: white;
-    border-radius: 1rem;
-    padding: 0.75rem;
-    margin: 1em;
-    width: 96%;
-    max-width: 20rem;
-    font-size: 15pt;
-  }
-  
-  form input.submitBtn:hover {
-    background-color: #3c6e71;
-  }
-  
-  form label.top input:required {
-    border-left: var(--accent3-color) solid 8px;
-  }
-  
-  form label.top input:required:valid {
-    border-left: #3c6e71 solid 8px;
-  }
-  
-  /*---------------Thank You-------------------- */
-  #thankyou {
-    text-align: center;
-  }
-  
-  #welcome {
-    text-align: center;
-    background-color: #bf4b3d;
-    color: white;
-    padding: 1em;
-    font-family: var(--paragraph-font);
-    border-radius: 5px;
-  }
-  
-  #thankyou h2 {
-    text-align: center;
-  }
-  
-  #contact-soon {
-    font-size: 16pt;
-  }
-  
-  /* ---------------Directory------------------ */
-  #directory {
-    width: auto;
-    font-family: var(--paragraph-font);
-  }
-  
-  #directory-title {
-    text-align: center;
-    font-family: var(--heading-font);
-    font-size: 16pt;
-    color: #284b63;
-    margin-bottom: 10px;
-  }
-  
-  #view {
-    text-align: center;
-  }
-  
-  #view button {
-    text-align: center;
-    background-color: rgba(60, 110, 113, 0.15);
-    cursor: pointer;
-    border: 5px solid var(--primary-color);
-    border-radius: 5px;
-    margin: 10px;
-  }
-  
-  svg {
-    width: 50px;
-    height: 50px;
-    color: #3c6e71;
-    margin: .5em;
-    align-items: center;
-  }
-  
-  #view button:hover {
-    border: 8px solid var(--accent3-color);
-  }
-  
-  #view button:focus {
-    border: 8px solid var(--accent3-color);
-  }
-  
-  .member-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 2em;
-  }
-  
-  .member-cards section {
-    background-color: #284b63;
-    color: white;
-    border: 5px solid black;
-    box-shadow: 4px 4px 6px gray;
-    border-radius: 10px;
-    padding: 10px;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .member-list {
-    display: grid;
-  }
-  
-  .member-list table {
-    padding: 10px;
-  }
-  
-  table:nth-child(odd) {
-    background-color: #284b63;
-    color: white;
-  }
-  
-  table:nth-child(even) {
-    background-color: #d9d9d9;
-  }
+ /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1,
+p {
+  margin: 0 2vw;
+}
+
+body {
+  min-width: 300px;
+  margin: auto;
+}
+
+#banner {
+  font-family: var(--heading-font);
+  font-size: 14pt;
+  color: white;
+  background-color: var(--accent3-color);
+  text-align: center;
+  padding: 1rem;
+}
+
+header,
+footer {
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  margin: 20px;
+  padding: 1rem;
+}
+
+#logo-nav {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+#logo img {
+  height: 75px;
+  width: 75px;
+  border-radius: 15px;
+  border: 5px solid #bf4b3d;
+  box-shadow: 4px 4px 6px black;
+  margin: 5px;
+}
+
+header h1 {
+  font-family: var(--heading-font);
+  font-size: 16pt;
+  text-align: center;
+  color: var(--secondary-color);
+  text-shadow: 4px 4px 6px black;
+}
+
+.facebook img {
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  border: 3px solid var(--primary-color);
+}
+
+.linkedin img {
+  background-color: white;
+  border-radius: 10px;
+  border: 3px solid white;
+}
+
+#today-date {
+  font-family: var(--heading-font);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 0.5em;
+}
+
+nav button {
+  margin: 0.2rem 2vw;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+}
+
+nav {
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: sticky;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.8rem;
+  text-decoration: none;
+  font-family: var(--paragraph-font);
+  color: var(--secondary-color);
+}
+nav ul li .active {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+  display: none;
+}
+
+nav ul.open {
+  display: block;
+}
+
+#hamburgerBtn span:nth-child(1) {
+  display: block;
+}
+#hamburgerBtn span:nth-child(2) {
+  display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+  display: none;
+}
+#hamburgerBtn.open span:nth-child(2) {
+  display: block;
+}
+
+.home {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  grid-row-gap: 10px;
+  padding: 1em;
+  margin: 15px;
+}
+
+.event,
+.weather,
+.news-release,
+.spotlight {
+  font-family: var(--paragraph-font);
+  padding: 0.5em;
+  color: white;
+  box-shadow: 4px 4px 6px var(--accent1-color);
+}
+.join1{
+  background-color:  #353535;
+font-family: var(--paragraph-font);
+padding: 0.5em;
+color: white;
+box-shadow: 4px 4px 6px var(--accent1-color);
+}
+.hero {
+  position: relative;
+}
+
+#hero-image {
+  max-width: 100%;
+  opacity: 0.6;
+}
+
+.joinUs-btn h2 {
+  position: absolute;
+  font-family: var(--heading-font);
+  font-style: initial;
+  color: var(--accent1-color);
+  margin-top: -30%;
+  margin-left: 10px;
+  font-size: 1.7em;
+  text-shadow: 0 0 4px white;
+}
+
+.joinUs-btn button {
+  position: absolute;
+  margin-top: -18%;
+  margin-left: 20%;
+  background-color: #bf4b3d;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: var(--paragraph-font);
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 3px 3px 6px var(--accent1-color);
+}
+
+.event {
+  text-align: center;
+  background-color: #353535;
+}
+
+.event h2 {
+  font-size: 16pt;
+}
+
+.event img {
+  margin-top: -15px;
+  max-width: 40%;
+}
+
+.event a {
+  color: yellow;
+}
+
+.event a:hover {
+  color: white;
+}
+
+.news-release {
+  background-color: #353535;
+  font-style: initial;
+  text-align: center;
+}
+
+.news-release h3 {
+  font-weight: bold;
+  font-size: 2em;
+  text-shadow: 0 0 8px white;
+  margin-bottom: 10px;
+}
+
+.news-release p {
+  font-size: 22px;
+}
+
+.join {
+  display: none;
+}
+.weather {
+  background-color: #353535;
+  margin: 20px;
+  text-align: center;
+}
+
+
+.weather img {
+  width: 100%;
+}
+
+.spotlight {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.spotlight a {
+  color: yellow;
+}
+.spotlight a:hover {
+  color: white;
+}
+
+.spotlight1 {
+  background-color: var(--primary-color);
+}
+
+.spotlight1 img {
+  margin-top: -15px;
+  padding: 0.5em;
+  max-width: 60%;
+}
+
+.spotlight2 {
+  background-color: var(--primary-color);
+  margin-top: 5px;
+}
+
+.spotlight2 img {
+  margin-top: -15px;
+  padding: 0.5em;
+  max-width: 60%;
+}
+
+.spotlight3 img {
+  margin-top: -15px;
+  max-width: 60%;
+}
+
+.spotlight3 {
+  background-color: var(--primary-color);
+  display: none;
+}
+
+/* ----------------Footer------------- */
+footer {
+  text-align: center;
+  padding: 1em;
+  color: var(--secondary-color);
+}
+
+footer img {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.site-name {
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom: 3px;
+}
+
+.address1,
+.address2 {
+  font-size: 10pt;
+  font-style: italic;
+}
+
+.email,
+.phone,
+.location {
+  font-size: 10pt;
+  margin-top: 8px;
+}
+
+.footer-lower {
+  margin-top: 10px;
+  padding-top: 5px;
+  font-size: 10pt;
+  text-align: center;
+}
+
+.my-name {
+  font-size: 12pt;
+}
+
+.wdd-project {
+  font-size: 10pt;
+}
+
+#lastModified {
+  font-size: 10pt;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+/* -----------------Discover Page CSS------------------- */
+#discover {
+  background-color: var(--accent2-color);
+  margin: 30px;
+  text-shadow: 4px 4px 6px black;
+  padding: 1em;
+}
+
+#photos {
+  margin: auto;
+  text-align: center;
+}
+
+#title {
+  font-family: var(--heading-font);
+  text-align: center;
+  padding: 0.5em;
+  background-color: #3c6e71;
+  border-radius: 10px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.photo {
+  padding: 1em;
+  background-color: #353535;
+}
+
+.photo img {
+  max-width: 100%;
+  border-radius: 15px;
+  border: 20px solid #bf4b3d;
+}
+
+.photo {
+  padding: 20px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.photo p {
+  font-family: var(--paragraph-font);
+  font-size: 20px;
+  color: white;
+  background-color: #3c6e71;
+  border-radius: 10px;
+  margin: 1em;
+  padding: 1em;
+  box-shadow: 4px 4px 6px grey;
+}
+
+/* ---------------Join------------------ */
+main {
+  padding: 0 3%;
+  min-height: 20rem;
+  font-family: var(--heading-font);
+}
+
+form fieldset {
+  border: 3px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+}
+
+form legend {
+  color: white;
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  background-color: var(--accent1-color);
+  border-radius: 6px;
+  box-shadow: grey 4px 4px 6px;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: var(--accent3-color);
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+form label.top input,
+form label.top select,
+form label.top textarea {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: #555;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(60, 110, 113, 0.15);
+}
+
+form label span {
+  padding: 0 0.5rem;
+  background-color: #bf4b3d;
+  color: white;
+  border-radius: 8px;
+}
+
+.member-box {
+  display: block;
+}
+
+form label.sbs {
+  display: block;
+  padding: 0.75rem 0;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: var(--accent3-color);
+  color: white;
+  border-radius: 1rem;
+  padding: 0.75rem;
+  margin: 1em;
+  width: 96%;
+  max-width: 20rem;
+  font-size: 15pt;
+}
+
+form input.submitBtn:hover {
+  background-color: #3c6e71;
+}
+
+form label.top input:required {
+  border-left: var(--accent3-color) solid 8px;
+}
+
+form label.top input:required:valid {
+  border-left: #3c6e71 solid 8px;
+}
+
+/*---------------Thank You-------------------- */
+#thankyou {
+  text-align: center;
+}
+
+#welcome {
+  text-align: center;
+  background-color: #bf4b3d;
+  color: white;
+  padding: 1em;
+  font-family: var(--paragraph-font);
+  border-radius: 5px;
+}
+
+#thankyou h2 {
+  text-align: center;
+}
+
+#contact-soon {
+  font-size: 16pt;
+}
+
+/* ---------------Directory------------------ */
+#directory {
+  width: auto;
+  font-family: var(--paragraph-font);
+}
+
+#directory-title {
+  text-align: center;
+  font-family: var(--heading-font);
+  font-size: 16pt;
+  color: #284b63;
+  margin-bottom: 10px;
+}
+
+#view {
+  text-align: center;
+}
+
+#view button {
+  text-align: center;
+  background-color: rgba(60, 110, 113, 0.15);
+  cursor: pointer;
+  border: 5px solid var(--primary-color);
+  border-radius: 5px;
+  margin: 10px;
+}
+
+svg {
+  width: 50px;
+  height: 50px;
+  color: #3c6e71;
+  margin: .5em;
+  align-items: center;
+}
+
+#view button:hover {
+  border: 8px solid var(--accent3-color);
+}
+
+#view button:focus {
+  border: 8px solid var(--accent3-color);
+}
+
+.member-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 2em;
+}
+
+.member-cards section {
+  background-color: #284b63;
+  color: white;
+  border: 5px solid black;
+  box-shadow: 4px 4px 6px gray;
+  border-radius: 10px;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.member-list {
+  display: grid;
+}
+
+.member-list table {
+  padding: 10px;
+}
+
+table:nth-child(odd) {
+  background-color: #284b63;
+  color: white;
+}
+
+table:nth-child(even) {
+  background-color: #d9d9d9;
+}
