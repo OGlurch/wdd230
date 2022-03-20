@@ -53,6 +53,7 @@ function displayMembers(member) {
     logo.setAttribute("src", member.logo);
     logo.setAttribute("alt", `${member.name} Logo`);
     logo.setAttribute("loading", "lazy");
+    logo.setAttribute();
     card.appendChild(logo);
     
     cards.appendChild(card);

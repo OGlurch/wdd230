@@ -40,20 +40,20 @@
           /></a>
         </div>
 
-          <nav id="nav">
-            <button id="hamburgerBtn"><span>&#9776;</span><span>&#9932;</span></button>
+          <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
             <ul id="primaryNav">
-              <li class="active"><a href="../chamber/index.html">Home</a></li>
+              <li><a href="../Chamber/index.html">Home</a></li>
               <li class="active">
-                <a href="../chamber/discover.html">Discover</a>
+                <a href="discover.html">Discover</a>
               </li>
-              <li class="active">
-                <a href="../chamber/directory.html">Directory</a>
+              <li>
+                <a href="directory.html">Directory</a>
               </li>
-              <li class="active">
-                <a href="../chamber/join.html">Join</a>
+              <li>
+                <a href="join.html">Join</a>
               </li>
-              <li class="active">
+              <li>
                 <a href="contactus.html">Contact Us</a>
               </li>
             </ul>
@@ -63,29 +63,70 @@
           <p><span id="currentdate"></span></p>
         </div>
     </header>
-      <main>
-        <section id="directory">
-          <div id="directory-title">
-              <h1>Member Directory</h1>
+    <main>
+        <div class="contact-grid">
+            <div class="help-grid">
+              <h2 class="help-headline">
+                Contact us!
+              </h2>
+              <p class="help-paragraph">
+                Questions, comments, and suggestions are always appreciated.  
+                Our goal as a chamber is to ensure that current and future businesses
+                are supported in our community.  Please use this form to submit your 
+                feedback or questions.  We promise to respond promptly!
+              </p>
+              <div class="help-image">
+                <img
+                  src="images/The colony.webp"
+                  alt="thecolony logo" 
+                  loading="lazy" 
+                  width="70rem"
+                
+
+                />
+              </div>
+            </div>
+            <form class="name-form" action="contact-submit.html" method="GET">
+              <label class="cont-sbmt">Name:
+                <input
+                  type="text"
+                  name="name"
+                  id="contact-name"
+                  required
+                />
+              </label>
+              <label class="cont-sbmt">Email:
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="someone@gmail.com"
+                  id="contact-email"
+                  required
+                />
+              </label>
+              <label class="cont-sbmt">
+                Your question/comment:
+                <textarea
+                  id="contact-question"
+                  name="question"
+                  required
+                ></textarea>
+              </label>
+              <div id="contact-submit">
+                <button type="submit" name="submit">
+                  Contact Us
+                </button>
+              </div>
+              <div class="chamber-email">
+                <p>
+                  You can also email us at: 
+                  <a href= "info@pthecolony.org">info@thecolony.org</a>
+                </p>
+              </div>
+            </form>
           </div>
-          <div id="view">
-              <button id="list-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16">
-                  <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
-                </svg>
-              </button>
-              <button id="grid-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-list" viewBox="0 0 16 16">
-                  <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
-                  <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
-                </svg>
-              </button>
-          </div>
-              <div class="member-cards"></div>
-              <div class="member-list"></div>
-        </section>
-      </main>
-      <footer>
+    </main>
+    <footer>
         <div class="footer-upper">
           <section class="name-address">
             <img src="../week 3/images/The colony.jpg" alt="Pinnaccle Logo">
@@ -109,11 +150,9 @@
           <p class="my-name">Andrew Finlayson </p>
           <p class="wdd-project"></p>
         </div>
-        <div class="lastupdated-footer">
-          <p>Last Updated: <span id="updated"></span></p>
-        </div>
+        <div id="lastModified"></div>
       </footer>
     <script src="../chamber/js/script.js"></script>
-    <script src="../chamber/js/directory.js"></script>
+    <script src="../chamber/js/weather.js"></script>
   </body>
 </html>
